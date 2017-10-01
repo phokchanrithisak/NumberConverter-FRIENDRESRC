@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yinma.numbersystem.MainActivity">
+
+
+    <Button
+        android:id="@+id/gotobinary"
+        android:layout_width="180dp"
+        android:layout_height="263dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="binaryonclick"
+        android:text="Binary"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gotodecimal"
+        android:onClick="decimalonclick"
+
+        android:layout_width="180dp"
+        android:layout_height="263dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:text="Decimal"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@+id/gotobinary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gotooctal"
+        android:onClick="octalonclick"
+
+        android:layout_width="180dp"
+        android:layout_height="263dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#24ff00"
+        android:text="octal"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotobinary" />
+
+    <Button
+        android:id="@+id/gotohexadecimal"
+        android:onClick="hexadecimalonclick"
+
+        android:layout_width="180dp"
+        android:layout_height="263dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fffc00"
+        android:elevation="0dp"
+        android:text="hexadecimal"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintLeft_toRightOf="@+id/gotooctal"
+        app:layout_constraintTop_toBottomOf="@+id/gotodecimal" />
+
+</android.support.constraint.ConstraintLayout>
